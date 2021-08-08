@@ -1,0 +1,76 @@
+body {
+    background: linear-gradient(to right, #B30921, #7A24FF);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+div.box{
+    width: 100%;
+    padding: 300px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(45deg, #3e075d, #61073c, #C70060, #7D0678, #6D078C);
+    background-size: 500% 100%;
+    animation-name: degrade;
+    animation-duration: 17s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes degrade{
+    0%{
+        background-position-x: 0%;
+    }
+    100%{
+        background-position-x: 100%;
+    }
+}
+legend {
+    text-align: center;
+    font-size: 30px;
+    color: rgb(198, 244, 248);
+}
+fieldset {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.205);
+}
+.inputBox {
+    padding: 10px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    
+}
+button {
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    padding: 5px;
+    width: 100%;
+    background-color: dodgerblue;
+    color: white;
+    cursor: pointer;
+}
+label {
+    color: white;
+}
+input {
+    width:100%;
+    height: 30px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+}
+#criar_conta, a {
+    color: white;
+    padding: 10px;
+    text-align: center;
+    
+}
